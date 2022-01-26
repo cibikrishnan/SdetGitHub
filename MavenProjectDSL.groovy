@@ -6,7 +6,7 @@ job('Job Name') {
     }
 
     triggers {
-        scm('*****')
+        scm('*/1 * * * *')
     }
 
     steps {
