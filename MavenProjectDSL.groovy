@@ -5,7 +5,9 @@ job('Job Name') {
         git("https://github.com/cibikrishnan/SdetGitHub.git", 'master')
     }
             {
-                triggers('*****')
+                triggers{
+                    scm('*****')
+                }
             }
     steps{
 
