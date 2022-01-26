@@ -3,7 +3,7 @@ pipeline {
         label 'demopipeline'}
     triggers {
 
-    */1 * * * *
+    ('*/1 * * * *')
 
     }
     stages {
