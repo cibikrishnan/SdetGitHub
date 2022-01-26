@@ -6,7 +6,7 @@ job('Job Name') {
     }
 
     triggers {
-        scm('*/1 * * * *')
+        cron('*/1 * * * *')
     }
 
     steps {
