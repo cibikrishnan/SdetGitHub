@@ -1,5 +1,6 @@
 pipeline {
-    agent "demopipeline"
+    agent {
+        label 'demopipeline'}
 /*     tools {
         maven 'Maven 3.3.9'
         jdk 'jdk8'
