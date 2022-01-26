@@ -3,15 +3,15 @@ pipeline {
         label 'demopipeline'
         }
 
-  parameters {
+/*   parameters {
         string(name: 'ENV', defaultValue: 'STAGING', description: 'This is STAGING environment')
 
-      }
+      } */
       triggers {
           cron('''
               # leave spaces where you want them around the parameters. They'll be trimmed.
               # we let the build run with the default name
-              */2 * * * * %ENV=STAGING
+              */2 * * * * 
           ''')
       }
     stages {
