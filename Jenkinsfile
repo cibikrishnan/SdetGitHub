@@ -9,7 +9,7 @@ pipeline {
         stage ('Initialize') {
             steps {
                 bat '''
-                    echo "hostname"
+                    echo hostname
                 '''
             }
         }
