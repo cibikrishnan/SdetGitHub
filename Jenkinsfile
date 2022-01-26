@@ -1,7 +1,7 @@
 pipeline {
     agent {
         label 'demopipeline'}
-        CRON_SETTINGS = '''* * * * * % ENV=STAGING''' : ""
+        CRON_SETTINGS = '''* * * * * % ENV=STAGING''' 
   triggers {
     parameterizedCron(CRON_SETTINGS)
   }
