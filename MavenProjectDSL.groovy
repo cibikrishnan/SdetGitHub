@@ -9,7 +9,7 @@ job('Job Name') {
             }
     steps{
 
-        Maven('clean install test'), 'pom.xml')
+        Maven('clean install test', 'pom.xml')
 
     }
 
