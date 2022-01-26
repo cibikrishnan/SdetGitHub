@@ -8,8 +8,8 @@ pipeline {
     stages {
         stage ('Initialize') {
             steps {
-                bat '''
-                    echo hostname
+                //bat '''
+                    hostname
                 '''
             }
         }
