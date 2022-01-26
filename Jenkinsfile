@@ -2,7 +2,9 @@ pipeline {
     agent {
         label 'demopipeline'}
     triggers {
+    parameterizedCron(
     */1 * * * *
+    )
     }
     stages {
         stage ('Initialize') {
