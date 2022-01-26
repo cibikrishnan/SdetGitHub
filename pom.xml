@@ -97,6 +97,13 @@
       <artifactId>datatable</artifactId>
       <version>7.1.0</version>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-support -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-support</artifactId>
+      <version>4.1.0</version>
+    </dependency>
+
     <!-- https://mvnrepository.com/artifact/org.apiguardian/apiguardian-api -->
     <dependency>
       <groupId>org.apiguardian</groupId>
