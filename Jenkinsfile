@@ -6,7 +6,7 @@ pipeline {
         jdk 'jdk8'
     } */
     triggers {
-    */1 * * * *'
+    */1 * * * *
     }
     stages {
         stage ('Initialize') {
