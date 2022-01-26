@@ -8,8 +8,8 @@ pipeline {
     stages {
         stage ('Initialize') {
             steps {
-                //bat '''
-                    hostname
+                '''
+                 echo  "%java_home%"
                 '''
             }
         }
