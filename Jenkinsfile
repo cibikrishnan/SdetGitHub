@@ -1,11 +1,10 @@
 pipeline {
     agent {
         label 'demopipeline'}
-    triggers {
-
-    ('*/1 * * * *')
-
-    }
+        CRON_SETTINGS = '''* * * * * % ENV=STAGING''' : ""
+  triggers {
+    parameterizedCron(CRON_SETTINGS)
+  }
     stages {
         stage ('Initialize') {
             steps {
