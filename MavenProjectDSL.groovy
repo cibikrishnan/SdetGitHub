@@ -11,7 +11,7 @@ job('Job Name') {
 
     steps {
 
-        maven('clean install', 'pom.xml') {
+        maven('clean install test -Dtags= @datatable ', 'pom.xml') {
             goals('test')
         }
 
