@@ -16,7 +16,7 @@ pipeline {
 
         stage ('Build') {
             steps {
-                bat 'mvn test -Dcucumber.filter.tags="@datatable or @webpages"'
+                bat 'mvn test -Dcucumber.filter.tags="@datatable or @webpage"'
             }
             post {
                 success {
