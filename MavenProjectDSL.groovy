@@ -1,5 +1,5 @@
 job('Job Name') {
-    description('Maven DSL Demo on ${new Date()}')
+    description('Maven DSL Demo')
     scm {
 
         git('https://github.com/cibikrishnan/SdetGitHub.git', 'master')
@@ -11,8 +11,8 @@ job('Job Name') {
 
     steps {
 
-        maven('test -Dcucumber.filter.tags="@smoke"', 'pom.xml') {
-//            goals('test -Dcucumber.filter.tags="@smoke"')
+        maven('clean', 'pom.xml') {
+//            goals('test -Dcucumber.filter.tags="@datatable"')
         }
 
 
