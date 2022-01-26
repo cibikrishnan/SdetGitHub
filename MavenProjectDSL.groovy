@@ -12,7 +12,7 @@ job('Job Name') {
     steps {
 
         maven('clean', 'pom.xml') {
-//            goals('test -Dcucumber.filter.tags="@datatable"')
+            goals('test -Dcucumber.filter.tags="@datatable"')
         }
 
 
