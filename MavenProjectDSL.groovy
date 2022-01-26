@@ -6,7 +6,7 @@ job('Job Name') {
     }
 
     triggers {
-        cron('*/1 * * * *')
+ //       cron('*/1 * * * *')
     }
 
     steps {
