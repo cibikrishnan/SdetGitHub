@@ -6,9 +6,10 @@ import org.junit.runner.RunWith;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "feature",
-glue = {"stepdefinitions"},
-        tags = "@webpage"
+@CucumberOptions(
+        features = "feature",
+glue = {"stepdefinitions"}
+
 )
 
 
