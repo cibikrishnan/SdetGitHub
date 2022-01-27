@@ -6,12 +6,12 @@ job('Job Name') {
     }
 
     triggers {
- //       cron('*/1 * * * *')
+        cron('*/1 * * * *')
     }
 
     steps {
 
-        maven('test -Dcucumber.filter.tags="@datatable and @webpage"', 'pom.xml') {
+        maven('test -Dcucumber.filter.tags="@datatable or @webpage"', 'pom.xml') {
 //            goals('test -Dcucumber.filter.tags="@datatable"')
         }
 
